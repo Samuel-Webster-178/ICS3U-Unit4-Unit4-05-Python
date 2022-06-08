@@ -10,17 +10,28 @@ import constants
 
 
 def main():
-    # I calculate circumference
+    # I am the main function
+    counter = 0
+    sum = 0
 
     # input
-    radius = int(input("Enter radius of the circle in mm: "))
+    str_number = input("How many number do you want to add: ")
 
-    # process
-    circumference = constants.TAU * radius
-
-    # output
-    print("Circumference is {} mm.".format(circumference))
-    print("\nDone.")
+    # process & output
+    try:
+        int_number = int(str_number)
+        for counter in range(int_number):
+            num = float(input("number: "))
+            counter = counter + 1
+            if num > 0:
+                sum += num
+            else:
+                continue
+        print("Sum of positive numbers is {}.".format(sum))
+    except Exception:
+        print("Invalid Input.")
+    finally:
+        print("\nDone.")
 
 
 if __name__ == "__main__":

@@ -6,9 +6,6 @@
 #     with inputted radius
 
 
-import constants
-
-
 def main():
     # I am the main function
     counter = 0
